@@ -12,7 +12,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["http://localhost:3000", "https://human-segmentation-backend.onrender.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -55,6 +55,9 @@ def postprocess(output):
     binary_mask = (pred == 1).astype(np.uint8)
     return binary_mask
 
+@app.get("/")
+def root():
+    return {"message": "Backend for Human Segmentation is running!"}
 
 @app.post("/predict/")
 async def predict(file: UploadFile = File(...)):
