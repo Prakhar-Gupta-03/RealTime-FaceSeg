@@ -1,0 +1,30 @@
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(60, 72, 88, 0.08);
+  padding: 32px 32px 24px 32px;
+  margin: 32px auto 0 auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.images img {
+  width: 256px;
+  height: 256px;
+  object-fit: cover;
+  border: 2px solid #e0e7ff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(60, 72, 88, 0.10);
+  background: #f1f5f9;
+  transition: box-shadow 0.2s, border-color 0.2s, transform 0.1s;
+}

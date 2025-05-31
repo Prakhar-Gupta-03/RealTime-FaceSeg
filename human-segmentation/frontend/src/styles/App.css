@@ -1,0 +1,117 @@
+body {
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+  padding: 32px 0 20px 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.home-container,
+.mode-container,
+.upload-container,
+.cam-container,
+.live-container,
+.mode-selector {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(60, 72, 88, 0.08);
+  padding: 32px 32px 24px 32px;
+  margin: 32px auto 0 auto;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-container button,
+.mode-container button,
+.upload-container button,
+.cam-container button,
+.live-container button,
+.mode-selector button {
+  background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(60, 72, 88, 0.08);
+  cursor: pointer;
+  margin: 10px;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.home-container button:hover,
+.mode-container button:hover,
+.upload-container button:hover,
+.cam-container button:hover,
+.live-container button:hover,
+.mode-selector button:hover,
+.home-container button:focus,
+.mode-container button:focus,
+.upload-container button:focus,
+.cam-container button:focus,
+.live-container button:focus,
+.mode-selector button:focus {
+  background: linear-gradient(90deg, #4f46e5 0%, #2563eb 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+h2, h3 {
+  color: #3730a3;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.result-container,
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.result-container img,
+.images img {
+  width: 256px;
+  height: 256px;
+  object-fit: cover;
+  border: 2px solid #e0e7ff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(60, 72, 88, 0.10);
+  background: #f1f5f9;
+  transition: box-shadow 0.2s, border-color 0.2s, transform 0.1s;
+}
+
+input[type="file"] {
+  margin: 18px 0;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #e0e7ff;
+  background: #f8fafc;
+}
+
+@media (max-width: 700px) {
+  .home-container,
+  .mode-container,
+  .upload-container,
+  .cam-container,
+  .live-container,
+  .mode-selector {
+    padding: 16px 4px 16px 4px;
+    max-width: 98vw;
+  }
+  .result-container,
+  .images {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

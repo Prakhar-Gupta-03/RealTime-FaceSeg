@@ -1,0 +1,39 @@
+.mode-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(60, 72, 88, 0.08);
+  padding: 32px 32px 24px 32px;
+  margin: 32px auto 0 auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.buttons button {
+  background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(60, 72, 88, 0.08);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.buttons button:hover,
+.buttons button:focus {
+  background: linear-gradient(90deg, #4f46e5 0%, #2563eb 100%);
+  transform: translateY(-2px) scale(1.03);
+}

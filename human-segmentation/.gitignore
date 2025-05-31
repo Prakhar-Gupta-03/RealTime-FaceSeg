@@ -1,0 +1,8 @@
+/human-segmentation-frontend/node_modules
+/backend/venv
+/backend/__pycache__
+/backend/overlay_result.png
+/backend/test_image.jpg
+/backend/test_backend.py
+/frontend/node_modules
+/frontend/package-lock.json
