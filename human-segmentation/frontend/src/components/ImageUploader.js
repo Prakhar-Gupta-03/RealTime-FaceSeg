@@ -22,7 +22,8 @@ function ImageUploader({ onBack }) {
 
       try {
         setLoading(true);
-        const res = await axios.post("http://localhost:8000/predict/", formData);
+        const API_URL = process.env.REACT_APP_API_URL || "http://localhost:8000";
+        const res = await axios.post(`${API_URL}/predict/`, formData);
         const { mask } = res.data;
 
         const overlayed = await overlayMask(base64Image, mask);

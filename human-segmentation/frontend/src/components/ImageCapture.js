@@ -38,8 +38,8 @@ const ImageCapture = ({ onBack }) => {
       const file = new File([blob], "capture.png", { type: "image/png" });
       const formData = new FormData();
       formData.append("file", file);
-
-      const res = await fetch("http://localhost:8000/predict/", {
+      const API_URL = process.env.REACT_APP_API_URL || "http://localhost:8000";
+      const res = await fetch(`${API_URL}/predict/`, {
         method: "POST",
         body: formData,
       });

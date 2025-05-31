@@ -1,7 +1,7 @@
 // src/App.js
 import React, { useState } from "react";
-import ModeSelector from "./components/ModeSelector";
-import CameraFeed from "./components/CameraFeed";
+// import ModeSelector from "./components/ModeSelector";
+// import CameraFeed from "./components/CameraFeed";
 import ImageCapture from "./components/ImageCapture";
 import LiveSegmentation from "./components/LiveSegmentation";
 import ImageUploader from "./components/ImageUploader";
