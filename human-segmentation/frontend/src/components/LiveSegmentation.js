@@ -36,7 +36,7 @@ const LiveSegmentation = ({ onBack }) => {
     if (streaming) {
       intervalId = setInterval(() => {
         captureAndSegment();
-      }, 100); // one prediction per second (adjust as needed)
+      }, 2500); // one prediction per second (adjust as needed)
     }
 
     return () => clearInterval(intervalId);
